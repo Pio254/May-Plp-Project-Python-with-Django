@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Monitoring Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Farm Monitoring Services</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'upload' %}">Upload Data</a></li>
+                <li><a href="{% url 'graphs' %}">Graphs</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Services</h2>
+        <p>We provide advanced monitoring solutions to help farmers track soil moisture levels and make informed irrigation decisions. Our platform offers real-time sensor data collection and graph visualization for better field management.</p>
+        
+        <section>
+            <h3>Sensor Installation</h3>
+            <p>We assist in the installation and setup of soil moisture sensors to ensure your field is constantly monitored.</p>
+        </section>
+
+        <section>
+            <h3>Data Monitoring</h3>
+            <p>Our platform helps you monitor data from multiple sensors spread across your farm, allowing you to view real-time information on soil conditions.</p>
+        </section>
+
+        <section>
+            <h3>Visual Analytics</h3>
+            <p>We provide visual analytics and graphs that help you interpret the collected data easily, leading to efficient irrigation decisions.</p>
+        </section>
+
+        <section>
+            <h3>Technical Support</h3>
+            <p>Our team offers 24/7 technical support to ensure your sensor systems and the monitoring platform are running smoothly.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: 123-456-789 | Email: support@farmmonitoring.com</p>
+    </footer>
+</body>
+</html>
