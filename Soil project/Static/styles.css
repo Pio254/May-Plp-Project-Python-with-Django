@@ -1,0 +1,87 @@
+/* Import a cool font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use the imported cool font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    color: #020202; /* red text color */
+    position: relative;
+    z-index: 1; /* Ensure body content is above the background */
+}
+
+/* Background image fixed behind the content */
+body::before {
+    content: "";
+    position: fixed; /* Keep the background image fixed while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('soil.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the image stays fixed even when scrolling */
+    z-index: -1; /* Make sure this is behind all other content */
+    opacity: 0.5; /* Adjust the opacity of the background image */
+}
+
+header {
+    background: rgba(19, 19, 19, 0.7); /* Black with transparency for header background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav {
+    background: rgba(184, 0, 0, 0.692); /* Same background as header for consistency */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: 700; /* Bold font for titles */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem; /* Add some padding around the main content */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background for readability */
+    border-radius: 10px; /* Adds rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 2rem auto;
+    max-width: 1200px; /* Limit the width of the content area */
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Black with transparency for footer background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
